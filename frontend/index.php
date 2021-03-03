@@ -36,12 +36,12 @@
       <div class="col-lg-8">
 
         <!-- Title -->
-        <h1 class="mt-4">Post Title</h1>
+        <h1 class="mt-4"><?php echo "Ponsel Layar Lipat Xiaomi Lolos Sertifikasi" ?></h1>
 
         <!-- Author -->
         <p class="lead">
           by
-          <a href="#">Start Bootstrap</a>
+          <a href="#">Virgina Maulita Putri - detikInet</a>
         </p>
 
         <hr>
@@ -57,24 +57,14 @@
         <hr>
 
         <!-- Post Content -->
-        <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus, vero, obcaecati, aut, error quam sapiente nemo saepe quibusdam sit excepturi nam quia corporis eligendi eos magni recusandae laborum minus inventore?</p>
-
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut, tenetur natus doloremque laborum quos iste ipsum rerum obcaecati impedit odit illo dolorum ab tempora nihil dicta earum fugiat. Temporibus, voluptatibus.</p>
-
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos, doloribus, dolorem iusto blanditiis unde eius illum consequuntur neque dicta incidunt ullam ea hic porro optio ratione repellat perspiciatis. Enim, iure!</p>
-
-        <blockquote class="blockquote">
-          <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
-          <footer class="blockquote-footer">Someone famous in
-            <cite title="Source Title">Source Title</cite>
-          </footer>
-        </blockquote>
-
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error, nostrum, aliquid, animi, ut quas placeat totam sunt tempora commodi nihil ullam alias modi dicta saepe minima ab quo voluptatem obcaecati?</p>
-
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum, dolor quis. Sunt, ut, explicabo, aliquam tenetur ratione tempore quidem voluptates cupiditate voluptas illo saepe quaerat numquam recusandae? Qui, necessitatibus, est!</p>
-
-        <hr>
+        <?php echo 'Jakarta - Beberapa bocoran menyebutkan Xiaomi akan meluncurkan ponsel layar lipat pertamanya pada tahun ini. Kini ponsel misterius tersebut telah lolos sertifikasi di China.
+                    Tipster asal China Digital Chat Station menemukan perangkat ini di database badan sertifikasi China TENAA. Ponsel ini mengusung kode M2011J18C, seperti dikutip dari Gizmochina, Minggu (28-2-2021).
+                    Saat ini tidak ada informasi tambahan tentang spesifikasi atau desain ponsel layar lipat Xiaomi di situs TENAA. Satu-satunya informasi yang tersedia adalah ponsel ini memiliki dukungan untuk jaringan 5G.
+                    Sebelumnya analis Ross Young mengklaim Xiaomi akan meluncurkan tiga ponsel layar lipat tahun ini. Ponsel ini akan memiliki tiga desain berbeda yaitu melipat ke dalam, melipat ke luar dan clamshell.
+                    Belum diketahui desain apa yang akan diusung M2011J18C, tapi jika ponsel ini sudah lolos sertifikasi artinya ponsel ini akan diluncurkan tidak lama lagi.
+                    Young bahkan pernah mengatakan ponsel layar lipat pertama Xiaomi akan hadir di awal 2021. Jadi kemungkinan kita tidak harus menunggu hingga paruh kedua tahun 2021 untuk melihat wujud ponsel layar lipat ini.
+                    Rumor yang beredar sebelumnya mengklaim ponsel layar lipat pertama Xiaomi akan menggunakan chipset Snapdragon 888 dan display dengan refresh rate 120 Hz. Ponsel ini juga diprediksi menggunakan kamera 108 MP 
+                    dan antarmuka MIUI 12 yang sudah disesuaikan khusus untuk ponsel layar lipat'?>
 
         <!-- Comments Form -->
         <div class="card my-4">
@@ -90,39 +80,17 @@
         </div>
 
         <!-- Single Comment -->
+        <?php foreach($komentar as $kmt ):  ?>
         <div class="media mb-4">
           <img class="d-flex mr-3 rounded-circle" src="http://placehold.it/50x50" alt="">
           <div class="media-body">
-            <h5 class="mt-0">Commenter Name</h5>
-            Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
+            <h5 class="mt-0"><?php echo $kmt['nama'] ?></h5>
+            <?php echo $kmt ['komentar'] ?>
           </div>
         </div>
+        <?php endforeach?>
 
-        <!-- Comment with nested comments -->
-        <div class="media mb-4">
-          <img class="d-flex mr-3 rounded-circle" src="http://placehold.it/50x50" alt="">
-          <div class="media-body">
-            <h5 class="mt-0">Commenter Name</h5>
-            Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
-
-            <div class="media mt-4">
-              <img class="d-flex mr-3 rounded-circle" src="http://placehold.it/50x50" alt="">
-              <div class="media-body">
-                <h5 class="mt-0">Commenter Name</h5>
-                Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
-              </div>
-            </div>
-
-            <div class="media mt-4">
-              <img class="d-flex mr-3 rounded-circle" src="http://placehold.it/50x50" alt="">
-              <div class="media-body">
-                <h5 class="mt-0">Commenter Name</h5>
-                Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
-              </div>
-            </div>
-
-          </div>
-        </div>
+       
 
       </div>
 
