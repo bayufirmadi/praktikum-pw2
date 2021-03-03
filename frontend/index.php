@@ -1,3 +1,7 @@
+<?php include('data_komentar.php')?>
+<?php include('data_berita.php')?>
+
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -123,7 +127,7 @@
       </div>
 
       <!-- Sidebar Widgets Column -->
-        <?php require_once ('parsial/sidebar.php') ?>
+      <?php require_once ('partial/sidebar.php') ?>
 
     </div>
     <!-- /.row -->
