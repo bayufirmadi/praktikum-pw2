@@ -8,8 +8,10 @@
 <body>
     <h1>Layanan</h1>
     <p>Layanan program studi sistem informasi meliputi:</p>
-        <li>Pendidikan dan Pengajaran</li>
-        <li>Bakti pada Masyarakat</li>
-        <li>Penelitian</li>
+    <ol>
+        @foreach($list_layanan as $ls)
+        <li>{{$ls}}</li>
+        @endforeach
+    </ol>
 </body>
 </html>

@@ -14,11 +14,11 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-route::get('/tentang',[SiteController::class,'tentang']);
+Route::get('/tentang',[SiteController::class,'tentang']);
 
-route::get('/kontak',[SiteController::class,'kontak']);
+Route::get('/kontak',[SiteController::class,'kontak']);
 
-route::get('/layanan',[SiteController::class,'layanan']);
+Route::get('/layanan',[SiteController::class,'layanan']);
 
 Route::get('/', function () {
     return view('welcome');
@@ -29,3 +29,9 @@ Route::get('/dashboard', function () {
 })->middleware(['auth'])->name('dashboard');
 
 require __DIR__.'/auth.php';
+
+Route::get('/beranda',[SiteController::class,'beranda']);
+Route::get('/tentang',[SiteController::class,'tentang']);
+Route::get('/kontak',[SiteController::class,'kontak']);
+Route::get('/layanan',[SiteController::class,'layanan']);
+Route::get('/listDosen/{tahun}',[SiteController::class,'listDosen']);
