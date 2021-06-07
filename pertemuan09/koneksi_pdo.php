@@ -1,4 +1,4 @@
-<? php 
+<?php 
     $dsn = 'mysql:host=localhost;dbname=cybercampus';
     $user = 'root';
     $passwd = 'bayu181001';
