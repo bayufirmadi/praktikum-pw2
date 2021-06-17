@@ -5,6 +5,7 @@ namespace App\Http\controllers;
 use Illuminate\Http\request;
 use App\Models\Dataku;
 use Illuminate\Support\Facades\DB;
+use Illuminate\Support\Facades\Auth;
 
 class SiteController extends controller
 {
@@ -19,8 +20,10 @@ class SiteController extends controller
         $nama_prodi = 'Sistem Informasi';
         $universitas = 'Universitas Tanjungpura';
         $kajur = 'Ilhamsyah';
+        $id_user = Auth::id();
+        $current_user = Auth::user(); 
 
-        return view('site.tentang', compact('nama_prodi', 'universitas','kajur'));
+        return view('site.tentang', compact('nama_prodi', 'universitas','kajur','id_user','current_user'));
 
         return view('site.tentang');
     }

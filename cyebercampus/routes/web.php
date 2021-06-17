@@ -32,7 +32,7 @@ Route::get('/dashboard', function () {
 require __DIR__.'/auth.php';
 
 Route::get('/',[SiteController::class,'beranda'])->name('beranda');
-Route::get('/tentang',[SiteController::class,'tentang']);
+Route::get('/tentang',[SiteController::class,'tentang'])->middleware('auth');
 Route::get('/percontohan',[SiteController::class,'percontohan']);
 Route::get('/site/kontak',[SiteController::class,'kontak'])->name('kontak');
 Route::get('/layanan',[SiteController::class,'layanan']);
@@ -47,3 +47,10 @@ Route::get('/layanan/hapus/{id}',[LayananController::class,'hapus'])->name('laya
 Route::get('/layanan/formtambah',[LayananController::class,'formTambah'])->name('layanan.formtambah');
 Route::get('/cobaform',[SiteController::class,'cobaForm'])->name('cobaform');
 Route::post('/prosesform',[SiteController::class,'prosesForm'])->name('prosesfrom');
+
+Route::get('/admin/dashboard', [SiteBackendController::class, 'index'])->name('admin.dashboard');
+Route::get('/admin/layanan',  [LayananController::class, 'indexBackend'])->name('admin.layanan');
+//Route::get('/admin/layanan',  [LayananController::class, 'detailBackend'])->name('admin.layanan');
+//Route::get('/admin/layanan',  [LayananController::class, 'formTambahBackend'])->name('admin.layanan');
+//Route::get('/admin/layanan',  [LayananController::class, 'formubah_backend'])->name('admin.layanan');
+
