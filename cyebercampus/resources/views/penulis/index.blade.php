@@ -1,4 +1,4 @@
-@extends('layouts.backend.main')
+@@extends('layouts.backend.main')
 
 @section('content')
 <div class="container-fluid">
@@ -14,9 +14,7 @@
                 <!-- Card Body -->
                 <div class="card-body">
                 <h1 class="mt-4">Layanan kami (Eloquent)</h1>
-                <a href="{{ route('penulis.tambah') }}" class="btn btn-primary">Tambah Layanan</a>
-                <li>  
-            
+                <a href="{{ route('penulis.tambah') }}" class="btn btn-primary">Tambah Penulis</a>
                 <ul>
                     Ini merupakan halaman latihan untuk praktikum pemrograman web 2. Lorem ipsum, dolor
                     sit amet consectetur adipisicing elit. Qui eaque quis eius nisi, voluptatem, vero

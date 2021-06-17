@@ -3,6 +3,8 @@
 use App\Http\controllers\SiteController;
 use App\Http\controllers\LayananController;
 use Illuminate\Support\Facades\Route;
+use App\Http\controllers\PenulisController;
+use App\Http\controllers\BukuController;
 
 /*
 |--------------------------------------------------------------------------
@@ -54,3 +56,5 @@ Route::get('/admin/layanan',  [LayananController::class, 'indexBackend'])->name(
 //Route::get('/admin/layanan',  [LayananController::class, 'formTambahBackend'])->name('admin.layanan');
 //Route::get('/admin/layanan',  [LayananController::class, 'formubah_backend'])->name('admin.layanan');
 
+Route::get('/admin/penulis', [PenulisController::class, 'index'])->name('admin.penulis');
+Route::get('/admin/tambah', [PenulisController::class, 'tambah'])->name('admin.tambah');
